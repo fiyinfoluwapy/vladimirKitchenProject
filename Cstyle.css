@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    min-height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/6287548/pexels-photo-6287548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+
+/*--------NAV-BAR--------*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.register-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*------- now to style the heading------*/
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+    font-family: cursive, sans-serif;
+}
+
+.header p {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    font-family: cursive, sans-serif;
+}
+
+/*-------Search bar-------*/
+.search-bar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button {
+    background: red;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img {
+    width: 15px;
+    margin-top: 7px;
+}
+
+.location-input {
+    flex: 1;
+}
+
+/*-------EXCLUSIVES-------*/
+.sub-title {
+    margin: 50px 0 20px;
+    font-size: 2.2w;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img {
+    width: 100%;
+    border-radius: 20px;
+    height: 12rem;
+}
+
+.exclusives div {
+    position: relative;
+}
+
+.exclusives div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+/*---------Treding places-------*/
+.trending {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 12%;
+    height: 12rem;
+}
+
+.trending h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.cta {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url("https://images.pexels.com/photos/19725455/pexels-photo-19725455/free-photo-of-chicken-and-fries.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+
+}
+
+.cta h3 {
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+    font-family: lobster, cursive;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: monospace;
+}
+
+.cta-btn {
+    background-image: linear-gradient(315deg, #7ee8fa, #80ff72);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*-----style order button----*/
+.start-btn {
+    text-decoration: none;
+    background-image: linear-gradient(315deg, #7ee8fa, #80ff72);
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    border-radius: 30px;
+    margin: 60px auto;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*---------about-msg-------*/
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #537895;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+/*---------Social Media------*/
+#social-media {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    align-items: center;
+}
+
+#social-media p {
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-family: monospace;
+    text-align: center;
+    color: #537895;
+
+}
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+    margin: 8px 0 8px 70px;
+    align-items: center;
+    position: center;
+}
+
+.social-icons a:hover img {
+    transform: translateX(-10px);
+}
+
+/*------footer section-----*/
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer hr {
+    background: #80ff72;
+    height: 2px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/*-------for small screen devices------*/
+@media only screen and (max-width:700px) {
+    .logo {
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7px;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .register-btn {
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #7ee8fa;
+        font-size: 28px;
+    }
+
+    .active::after {
+        left: -40px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+
+    .hidemenu {
+        max-height: 300px;
+    }
+
+    .header h1 {
+        padding-top: 200px;
+        font-size: 7vw;
+    }
+
+    .header p {
+        padding-top: 200px;
+        font-size: 5vw;
+    }
+
+    .search-bar {
+        widows: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 8px;
+        position: relative
+    }
+
+    .search-bar form {
+        display: block;
+    }
+
+    .search-bar form input {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-bottom: 10px
+    }
+
+    .search-bar form botton {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .sub-title {
+        font-size: 6vw;
+    }
+
+    .cta {
+        padding: 15% 5%;
+
+    }
+
+    .cta h3 {
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+
+    .cta p {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .stories p {
+        font-size: 22px;
+
+    }
+
+    .about-msg {
+        font-size: 15px;
+    }
+}
+
+/*-------- Spaghetti -page-------*/
+.navbar-white {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05)
+}
+
+.navbar-white .nav-links li a {
+    color: #000;
+}
+
+.navbar-white .register-btn {
+    background: #ff5361;
+    color: #fff;
+}
+
+nav.navbar-white .fa-bars {
+    color: #000;
+}
+
+nav.navbar-white .active::after {
+    background: #ff5361;
+}
+
+.list-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col {
+    flex-basis: 70%;
+}
+
+.right-col {
+    flex-basis: 25%;
+}
+
+.left-col h1 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px
+}
+
+.house {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 2px solid #ccc;
+}
+
+.house-img {
+    flex-basis: 40%;
+   
+}
+
+.house imfo {
+    flex-basis: 58%;
+    color: #555;
+}
+
+.house-img img {
+    width: 100%;
+    border-radius: 12px;
+    height: 15rem;
+}
+
+.house-info h3 {
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info i {
+    color: #ff5361;
+    font-size: 19px;
+    margin: 10px 1px;
+}
+
+.house-price {
+    text-align: right;
+}
+
+.house-price h4 {
+    font-size: 20px;
+}
+
+.house-price h4 span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*------SIDE BAR-----*/
+.side-bar {
+    border: 2px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.side-bar h2 {
+    font-weight: 500;
+}
+
+.side-bar h3 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+
+}
+
+.filter p {
+    flex: 1;
+}
+
+.filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.side-bar-link {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.side-bar-link a {
+    text-decoration: none;
+    color: #d98324;
+}
+
+/*----- Pagination------*/
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination img {
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.right-arrow {
+    transform: rotate(180deg);
+}
+
+.pagination span {
+    margin: 10px 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .current {
+    background: #333;
+    color: #fff;
+}
+
+/*------small screen for listing page----*/
+@media only screen and (max-width:700px) {
+    .list-container {
+        margin-top: 150px;
+    }
+
+    .left-col,
+    .right-col,
+    .house-img,
+    .house-info {
+        flex-basis: 100%;
+    }
+
+    .left-col h1 {
+        font-size: 22px;
+    }
+
+    .house-info h3 {
+        font-size: 18px;
+    }
+
+    .house-info i {
+        font-size: 16px;
+    }
+
+    .pagination span {
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+}
